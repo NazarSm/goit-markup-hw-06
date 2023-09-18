@@ -1295,6 +1295,11 @@ PORTFOLIO
 
     margin-bottom: 40px;
 }
+@media only screen and (max-width: 400.98px) {
+    .mobile-phone-link{
+        font-size: 24px;
+    }
+}
 @media only screen and (max-width: 319.98px) {
     .mobile-phone-link{
         font-size: 24px;
@@ -1308,6 +1313,11 @@ PORTFOLIO
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+@media only screen and (max-width: 400.98px) {
+    .mobile-email-link{
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 319.98px) {
     .mobile-email-link{
         font-size: 14px;
@@ -1320,7 +1330,7 @@ PORTFOLIO
 }
 @media only screen and (max-width: 400.98px) {
     .mobile-social-list {
-        gap: 42px;
+        gap: 32px;
     }
 }
 @media only screen and (max-width: 319.98px) {
