@@ -324,7 +324,7 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
     .footer-container {
-        padding-left: 108px;
+        width: 584px;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -517,17 +517,25 @@ img {
 }
 
 .modal {
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     position: absolute;
     top: 50%;
     left: 50%;
     background-color: var(--dairy-cl);
     min-height: 584px;
-    min-width: 408px;
+    min-width: 284px;
+    max-width: 392px;
+    width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1);
+}
+@media only screen and (min-width: 768px) {
+    .modal {
+        padding: 72px 24px 24px 24px;
+        max-width: 408px;
+    }
 }
 
 .modal-btn {
@@ -931,9 +939,17 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
 /**
   TEAM
  */
+
+
 .team {
     background-color: var(--cloud-cl);
     padding: 96px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+    .team {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 1158px) {
     .team {
@@ -943,12 +959,12 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
 
 .team-list {
     display: flex;
-    /*gap: 24px;*/
     gap: 72px;
     flex-wrap: wrap;
 }
-@media only screen and (min-width: 758px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
     .team-list {
+        width: 584px;
         gap: 64px 24px;
     }
 }
@@ -964,11 +980,6 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
     margin: auto;
-}
-@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
-    .team-list {
-        padding: 0 92px;
-    }
 }
 
 .team-container {
@@ -1018,6 +1029,12 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
 .customers{
     padding: 96px 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+    .customers{
+        display: flex;
+        justify-content: center;
+    }
+}
 @media only screen and (min-width: 1158px) {
     .customers{
         padding: 120px 0;
@@ -1029,11 +1046,13 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
     flex-wrap: wrap;
     gap: 72px 16px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
     .customers-list {
         justify-content: center;
         align-items: center;
         gap: 88px 24px;
+
+        width: 584px;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -1067,7 +1086,6 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers-link:focus,
 .customers-link:hover {
     border-color: var(--ocaen-cl);
@@ -1277,6 +1295,11 @@ PORTFOLIO
 
     margin-bottom: 40px;
 }
+@media only screen and (max-width: 319.98px) {
+    .mobile-phone-link{
+        font-size: 24px;
+    }
+}
 
 .mobile-email-link {
     color: var(--slate-cl);
@@ -1285,8 +1308,23 @@ PORTFOLIO
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+@media only screen and (max-width: 319.98px) {
+    .mobile-email-link{
+        font-size: 14px;
+    }
+}
 
 .mobile-social-list {
     display: flex;
     gap: 56px;
+}
+@media only screen and (max-width: 400.98px) {
+    .mobile-social-list {
+        gap: 42px;
+    }
+}
+@media only screen and (max-width: 319.98px) {
+    .mobile-social-list {
+        gap: 28px;
+    }
 }
