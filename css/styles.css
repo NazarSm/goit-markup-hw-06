@@ -115,6 +115,8 @@ img {
 @media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -939,8 +941,6 @@ input[type='checkbox']:checked + .modal-form-privacy-label > .modal-form-privacy
 /**
   TEAM
  */
-
-
 .team {
     background-color: var(--cloud-cl);
     padding: 96px 0;
